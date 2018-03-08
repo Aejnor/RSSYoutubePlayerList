@@ -12,7 +12,6 @@ import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Adapter extends BaseAdapter {
@@ -57,8 +56,8 @@ public class Adapter extends BaseAdapter {
         TextView title = v.findViewById(R.id.textViewTitle);
         title.setText(videos.getTitle());
 
-        TextView views = v.findViewById(R.id.textViewViews);
-        title.setText(videos.getViews());
+        TextView views = v.findViewById(R.id.textViewVisits);
+        views.setText("Visitas: "+videos.getViews());
 
         ImageView miniatura = v.findViewById(R.id.imageVideoPic);
 

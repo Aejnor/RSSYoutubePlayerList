@@ -63,7 +63,7 @@ public class ParseVideo {
                             } else if (tagName.equalsIgnoreCase("thumbnail")) {
                                 String url = xpp.getAttributeValue(null, "url");
                                 currentRecord.setMiniaturaURL(url);
-                            } else if (tagName.equalsIgnoreCase("stadistics")) {
+                            } else if (tagName.equalsIgnoreCase("statistics")) {
                                 String views = xpp.getAttributeValue(null, "views");
                                 currentRecord.setViews(views);
                             }
